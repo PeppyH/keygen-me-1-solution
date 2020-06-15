@@ -1,0 +1,18 @@
+### ======== Keygen reverse notes ===== ###
+
+8th june 2020
+
+dissecting binary with strings:
+   interesting strings (function name): 'check_valid_key', 'check_valid_char', 'validate_key'
+
+
+valid chars from the fn - numbers and capital letters.
+
+managed to get a graph up and running using free software! radare2 and or ghidra with cutter as a gui
+
+
+
+using this it looks as though firstly the program checks if the key is the correct lenght, then iterates over each character to ensure it is valid (as per above) the validate_key function is taking an arguement, then looping over it doing some arithmetic and bitwise operations - an encryption algorithm, and then at the end its comparing two values to check if the key is valid
+
+
+

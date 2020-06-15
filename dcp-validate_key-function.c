@@ -1,0 +1,50 @@
+uint32_t validate_key (char * s) {
+    int32_t var_14h;
+    int32_t var_10h;
+    size_t var_ch;
+    int32_t var_4h;
+    eax = strlen (s);
+    var_ch = eax;
+    var_14h = 0;
+    var_10h = 0;
+    while (eax > var_10h) {
+        edx = var_10h;
+        eax = s;
+        eax += edx;
+        eax = *(eax);
+        eax = (int32_t) al;
+        al = ord (eax);
+        eax = (int32_t) al;
+        edx = eax + 1;
+        eax = var_10h;
+        eax++;
+        eax *= edx;
+        var_14h += eax;
+        var_10h++;
+        eax = var_ch;
+        eax--;
+    }
+    ecx = var_14h;
+    edx = 0x38e38e39;
+    eax = ecx;
+    edx:eax = eax * edx;
+    ebx = edx;
+    ebx >>= 3;
+    eax = ebx;
+    eax <<= 3;
+    eax += ebx;
+    eax <<= 2;
+    ecx -= eax;
+    ebx = ecx;
+    eax = var_ch;
+    edx = eax - 1;
+    eax = s;
+    eax += edx;
+    eax = *(eax);
+    eax = (int32_t) al;
+    al = ord (eax);
+    eax = (int32_t) al;
+    al = (ebx == eax) ? 1 : 0;
+    ebx = var_4h;
+    return eax;
+}
